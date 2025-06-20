@@ -1,0 +1,5 @@
+numpy>=2.2.1
+scipy>=1.15.3
+scikit-learn>=1.6.1
+joblib>=1.5.1
+astropy>=7.0.1
