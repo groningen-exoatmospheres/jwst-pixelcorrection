@@ -7,12 +7,11 @@ This module is designed to work with NIRSpec data, specifically to identify and 
 To install the `unrelpix` module, you can use pip. The recommended way is to install it in editable mode, which allows you to make changes to the code without needing to reinstall the package each time.
 
 ```bash
-pip install git+https://github.com/groningen-exoatmospheres/jwst-pixelcorrection.git
+git clone https://github.com/groningen-exoatmospheres/jwst-pixelcorrection.git
+cd unrelpix
+pip install -e .
 ```
-or
-```bash
-pip install -e git+https://github.com/groningen-exoatmospheres/jwst-pixelcorrection.git
-```
+
 ### Usage and purpose
 ----
 The `unrelpix` module is intended for use in the analysis of NIRSpec data, particularly in identifying and handling unreliable pixels.
@@ -24,3 +23,7 @@ Taking the `ramp` files, the module identifies additional unreliable pixels miss
 - `jwst` locally installed (e.g., via `pip install jwst`)
 
 Tested on Python 3.13, should work on 3.10, 3.11, 3.12.
+Works on Linux, should work on MacOS.
+
+> ⚠️ **Warning:** Does not work on Windows due to the use of `jwst`
+For Windows users, use WSL; tested and functional on Fedora 42, should work on other Linux distributions as well.
