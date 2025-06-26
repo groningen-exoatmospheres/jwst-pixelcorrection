@@ -27,3 +27,5 @@ Works on Linux, should work on MacOS.
 
 > ⚠️ **Warning:** Does not work on Windows due to the use of `jwst`
 For Windows users, use WSL; tested and functional on Fedora 42, should work on other Linux distributions as well.
+
+> ⚠️ **Disclaimer:** This software is provided "as is", without warranty of any kind. Use at your own risk. Contributions and bug reports are welcome.
